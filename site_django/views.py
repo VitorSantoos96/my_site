@@ -3,11 +3,11 @@ from django.http import HttpResponse
 
 
 def home(request):
-    return HttpResponse('LOGIN AND REGISTRER')
+    return render(request, 'site_django/pages/home.html')
 
 
 def registrer(request):
-    return HttpResponse('REGISTRER')
+    return render(request, 'site_django/pages/registrer.html')
 
 def login(request):
-    return HttpResponse('LOGIN')
+    return render(request, 'site_django/pages/login.html')
