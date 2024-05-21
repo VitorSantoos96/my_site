@@ -4,12 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     
+
     <link rel="stylesheet" href="{% static "site_django/css/login.css" %}">
 
     <title>Login</title>
 </head>
 <body>
-    <h1 class="h1">Login</h1>
+    <div class="border-login">
+        <h1 class="text-singIn">sing in</h1>
+        <label for="username">Username</label>
+        <input type="text" class="boxtext" placeholder="Enter Userame" name="username">
+         
+        <label for="password">Password</label>
+        <input type="password" class="boxpassword" placeholder="Enter Password" name="password">
+        
+        <button class="btn-login">Login</button>
+        <button class="btn-registrer">Registrer</button>
+
+        <a href="/" class="link-password">
+            Forgot your password?</a>
+    </div>
+
 </body>
 </html>
