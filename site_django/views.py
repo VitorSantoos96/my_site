@@ -11,3 +11,6 @@ def registrer(request):
 
 def login(request):
     return render(request, 'site_django/pages/login.html')
+
+def forget_pasword(request):
+    return render(request, 'site_django/pages/forget_pasword.html')

@@ -21,11 +21,10 @@
     
 
     <link rel="stylesheet" href="{% static "site_django/css/login.css" %}">
-
     <title>Login</title>
 </head>
 <body>
-    <div class="border-login">
+    <div class="login-main">
         <div class="main-input">
             <h1 class="text-singIn">sing in</h1>
             <label for="username" class="name-username" >Username</label>
@@ -46,8 +45,9 @@
                 </button>
             </section>
 
-            <a href="/" class="link-forgot-password">
-                Forgot your password?</a>
+            <a href="/forget_pasword" class="link-forgot-password">
+                Forgot your password?
+            </a>
         </div>
     </div>
 
